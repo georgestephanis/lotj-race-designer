@@ -74,7 +74,7 @@ function ShowRace( props ) {
 
 	classes.forEach( mainclass => {
 		// const levels  = props.adjust_levels( race, mainclass );
-    const levels = race.levels[ mainclass ];
+		const levels = race.levels[ mainclass ];
 		const matches = true;
 
 		rows.push( <ShowRaceClass key={ race.name + mainclass } race={ race.name } label={ mainclass } levels={ levels } matches={ matches } /> )
@@ -204,139 +204,139 @@ function BuildRace( state ) {
 // Humans get +10 combat, -9 smug, +25 leadership, +12 esp, +7 sli +15 med, +61 sci
 const class_modifiers = {
 	"com": {
-        "com": 100,
-        "pil": 0,
-        "eng": 0,
-        "hun": -20,
-        "smu": 0,
-        "lea": 25,
-        "esp": 15,
-        "sli": 0,
-        "med": 0,
-        "sci": 0
+		"com": 100,
+		"pil": 0,
+		"eng": 0,
+		"hun": -20,
+		"smu": 0,
+		"lea": 25,
+		"esp": 15,
+		"sli": 0,
+		"med": 0,
+		"sci": 0
 	},
 	"pil": {
-        "com": 10,
-        "pil": 100,
-        "eng": 20,
-        "hun": -25,
-        "smu": 15,
-        "lea": 0,
-        "esp": 0,
-        "sli": 25,
-        "med": 15,
-        "sci": 0
+		"com": 10,
+		"pil": 100,
+		"eng": 20,
+		"hun": -25,
+		"smu": 15,
+		"lea": 0,
+		"esp": 0,
+		"sli": 25,
+		"med": 15,
+		"sci": 0
 	},
 	"eng": {
-        "com": 10,
-        "pil": 25,
-        "eng": 100,
-        "hun": -25,
-        "smu": 20,
-        "lea": 0,
-        "esp": 0,
-        "sli": 20,
-        "med": 25,
-        "sci": 25
+		"com": 10,
+		"pil": 25,
+		"eng": 100,
+		"hun": -25,
+		"smu": 20,
+		"lea": 0,
+		"esp": 0,
+		"sli": 20,
+		"med": 25,
+		"sci": 25
 	},
 	"hun": {
-        "com": 45,
-        "pil": 0,
-        "eng": 0,
-        "hun": 100,
-        "smu": 0,
-        "lea": 0,
-        "esp": 0,
-        "sli": 0,
-        "med": 0,
-        "sci": 0
+		"com": 45,
+		"pil": 0,
+		"eng": 0,
+		"hun": 100,
+		"smu": 0,
+		"lea": 0,
+		"esp": 0,
+		"sli": 0,
+		"med": 0,
+		"sci": 0
 	},
 	"smu": {
-        "com": 10,
-        "pil": 40,
-        "eng": 0,
-        "hun": -25,
-        "smu": 100,
-        "lea": 0,
-        "esp": 0,
-        "sli": 0,
-        "med": 0,
-        "sci": 0
+		"com": 10,
+		"pil": 40,
+		"eng": 0,
+		"hun": -25,
+		"smu": 100,
+		"lea": 0,
+		"esp": 0,
+		"sli": 0,
+		"med": 0,
+		"sci": 0
 	},
 	"lea": {
-        "com": 10,
-        "pil": 0,
-        "eng": 0,
-        "hun": -25,
-        "smu": 0,
-        "lea": 100,
-        "esp": 0,
-        "sli": 0,
-        "med": 0,
-        "sci": 0
+		"com": 10,
+		"pil": 0,
+		"eng": 0,
+		"hun": -25,
+		"smu": 0,
+		"lea": 100,
+		"esp": 0,
+		"sli": 0,
+		"med": 0,
+		"sci": 0
 	},
 	"esp": {
-        "com": -5,
-        "pil": 30,
-        "eng": 15,
-        "hun": -60, // ?
-        "smu": 70,
-        "lea": -55,
-        "esp": 100,
-        "sli": 60,
-        "med": 0,
-        "sci": 0
+		"com": -5,
+		"pil": 30,
+		"eng": 15,
+		"hun": -60, // ?
+		"smu": 70,
+		"lea": -55,
+		"esp": 100,
+		"sli": 60,
+		"med": 0,
+		"sci": 0
 	},
 	"sli": {
-        "com": 10,
-        "pil": 0,
-        "eng": 20,
-        "hun": -25,
-        "smu": 0,
-        "lea": 0,
-        "esp": 30,
-        "sli": 100,
-        "med": 0,
-        "sci": 0
+		"com": 10,
+		"pil": 0,
+		"eng": 20,
+		"hun": -25,
+		"smu": 0,
+		"lea": 0,
+		"esp": 30,
+		"sli": 100,
+		"med": 0,
+		"sci": 0
 	},
 	"med": {
-        "com": 10,
-        "pil": 0,
-        "eng": 0,
-        "hun": -25,
-        "smu": 0,
-        "lea": 10,
-        "esp": 0,
-        "sli": 0,
-        "med": 100,
-        "sci": 0
+		"com": 10,
+		"pil": 0,
+		"eng": 0,
+		"hun": -25,
+		"smu": 0,
+		"lea": 10,
+		"esp": 0,
+		"sli": 0,
+		"med": 100,
+		"sci": 0
 	},
 	"sci": {
-        "com": 10,
-        "pil": 0,
-        "eng": 40,
-        "hun": -25,
-        "smu": 0,
-        "lea": 0,
-        "esp": 0,
-        "sli": 0,
-        "med": 0,
-        "sci": 100
+		"com": 10,
+		"pil": 0,
+		"eng": 40,
+		"hun": -25,
+		"smu": 0,
+		"lea": 0,
+		"esp": 0,
+		"sli": 0,
+		"med": 0,
+		"sci": 100
 	}
 }
 
 function BuildRaceLevels( main, state ) {
 	const levels = {
-        "com": 55,
-        "pil": 55,
-        "eng": 55,
-        "hun": 55,
-        "smu": 55,
-        "lea": 55,
-        "esp": 55,
-        "sli": 55,
-        "med": 55,
-        "sci": 55
+		"com": 55,
+		"pil": 55,
+		"eng": 55,
+		"hun": 55,
+		"smu": 55,
+		"lea": 55,
+		"esp": 55,
+		"sli": 55,
+		"med": 55,
+		"sci": 55
 	};
 
 	if ( class_modifiers[ main ] ) {
